@@ -1,0 +1,54 @@
+:root {
+    --card-bg-color: #ffffff;
+    --card-hover-bg-color: #078bac9d;
+    --card-border-radius: 10px;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --card-width: 300px;
+    --card-hover-width: 320px;
+    --card-transition-time: 0.3s ease;
+    --card-padding: 20px;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d3edf3;
+  }
+  
+  .card {
+    background-color: var(--card-bg-color);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    width: var(--card-width);
+    padding: var(--card-padding);
+    transition: background-color var(--card-transition-time), 
+                box-shadow var(--card-transition-time), 
+                width var(--card-transition-time), 
+                transform var(--card-transition-time);
+  }
+  
+  .card:hover {
+    background-color: var(--card-hover-bg-color);
+    box-shadow: var(--card-hover-shadow);
+    width: var(--card-hover-width);
+    transform: scale(1.05);
+    text-shadow: #2c3e50;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  p {
+    color: #010808;
+    font-size: 1.5rem;
+  }
+
+  
+  
